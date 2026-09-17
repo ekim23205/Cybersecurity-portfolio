@@ -10,22 +10,34 @@ const projects = [
     "Built a Python security monitoring tool that analyzes system logs for suspicious activity while monitoring CPU and memory usage.",
   details:
     "Integrated Nmap network scanning and Scapy packet analysis to inspect network activity and identify source and destination IP addresses.",
-  link: "https://github.com/ekim23205/system-network-security-monitor",
-  linkText: "View on GitHub →",
+  links: [
+    {
+      text: "View on GitHub →",
+      url: "https://github.com/ekim23205/system-network-security-monitor",
+    },
+  ],
 },
 
   {
-    number: "02",
-    title: "Campus Password Strength Checker",
-    technologies: "JavaScript • HTML • CSS",
-    status: "Live",
-    description:
-      "Developed an interactive password-strength checker that evaluates passwords based on length, character variety, and common security weaknesses.",
-    details:
-      "Provides real-time feedback while operating entirely client-side so passwords are not transmitted to or stored on a server.",
-    link: "https://ekim23205.github.io/campus-password-strength-checker/",
-    linkText: "Live Demo →",
-  },
+  number: "02",
+  title: "Campus Password Strength Checker",
+  technologies: "JavaScript • HTML • CSS",
+  status: "Live",
+  description:
+    "Developed an interactive password-strength checker that evaluates passwords based on length, character variety, and common security weaknesses.",
+  details:
+    "Provides real-time feedback while operating entirely client-side so passwords are not transmitted to or stored on a server.",
+  links: [
+    {
+      text: "Live Demo →",
+      url: "https://ekim23205.github.io/campus-password-strength-checker/",
+    },
+    {
+      text: "View on GitHub →",
+      url: "https://github.com/ekim23205/campus-password-strength-checker",
+    },
+  ],
+},
 ];
 
 function App() {
@@ -241,19 +253,18 @@ function App() {
 
         <p>{project.details}</p>
 
-        {project.link !== "#" ? (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {project.linkText}
-          </a>
-        ) : (
-          <span className="coming-soon">
-            {project.linkText}
-          </span>
-        )}
+        <div className="project-links">
+          {project.links.map((link) => (
+            <a
+              key={link.url}
+              href={link.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.text}
+            </a>
+          ))}
+        </div>
 
       </div>
     ))}
