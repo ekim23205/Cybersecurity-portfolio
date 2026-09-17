@@ -1,18 +1,18 @@
 import "./App.css";
 
 const projects = [
-  {
-    number: "01",
-    title: "System & Network Security Monitoring Tool",
-    technologies: "Python • Nmap • Scapy",
-    status: "In Development",
-    description:
-      "Built a Python security monitoring tool that analyzes system logs for suspicious activity while monitoring CPU and memory usage.",
-    details:
-      "Integrated Nmap network scanning and Scapy packet analysis to inspect network activity and identify source and destination IP addresses.",
-    link: "#",
-    linkText: "GitHub Coming Soon",
-  },
+{
+  number: "01",
+  title: "System & Network Security Monitoring Tool",
+  technologies: "Python • Nmap • Scapy",
+  status: "Complete",
+  description:
+    "Built a Python security monitoring tool that analyzes system logs for suspicious activity while monitoring CPU and memory usage.",
+  details:
+    "Integrated Nmap network scanning and Scapy packet analysis to inspect network activity and identify source and destination IP addresses.",
+  link: "https://github.com/ekim23205/system-network-security-monitor",
+  linkText: "View on GitHub →",
+},
 
   {
     number: "02",
