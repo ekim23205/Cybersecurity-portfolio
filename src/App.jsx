@@ -7,9 +7,9 @@ const projects = [
   technologies: "Python • Nmap • Scapy",
   status: "Complete",
   description:
-    "Built a Python security monitoring tool that analyzes system logs for suspicious activity while monitoring CPU and memory usage.",
-  details:
-    "Integrated Nmap network scanning and Scapy packet analysis to inspect network activity and identify source and destination IP addresses.",
+  "Built a Python security monitoring tool that analyzes system logs, monitors CPU and memory usage, and generates alerts when suspicious activity is detected.",
+details:
+  "Integrated Nmap service detection and Scapy packet capture to analyze local network activity and identify source and destination IP addresses.",
   links: [
     {
       text: "View on GitHub →",
@@ -24,9 +24,9 @@ const projects = [
   technologies: "JavaScript • HTML • CSS",
   status: "Live",
   description:
-    "Developed an interactive password-strength checker that evaluates passwords based on length, character variety, and common security weaknesses.",
-  details:
-    "Provides real-time feedback while operating entirely client-side so passwords are not transmitted to or stored on a server.",
+  "Built an interactive password strength checker that evaluates passwords based on length, character variety, and common security weaknesses.",
+details:
+  "Implemented real-time security feedback entirely in the browser so entered passwords are never transmitted to or stored on a server.",
   links: [
     {
       text: "Live Demo →",
@@ -372,30 +372,47 @@ function App() {
 
 
         {/* SKILLS */}
-        <section id="skills">
+<section id="skills">
 
-          <p className="section-label">SKILLS</p>
+  <p className="section-label">SKILLS</p>
 
-          <h2>Technical Skills</h2>
+  <h2>Technical Skills</h2>
 
-          <div className="skills">
+  <div className="skill-categories">
 
-            <span>Python</span>
-            <span>Java</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>React</span>
-            <span>Linux</span>
-            <span>Kali Linux</span>
-            <span>Nmap</span>
-            <span>Scapy</span>
-            <span>Git</span>
-            <span>GitHub</span>
+    <div className="skill-category">
+      <h3>Languages</h3>
+      <div className="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+    </div>
 
-          </div>
+    <div className="skill-category">
+      <h3>Development</h3>
+      <div className="skills">
+        <span>React</span>
+        <span>Git</span>
+        <span>GitHub</span>
+      </div>
+    </div>
 
-        </section>
+    <div className="skill-category">
+      <h3>Cybersecurity & Systems</h3>
+      <div className="skills">
+        <span>Linux</span>
+        <span>Kali Linux</span>
+        <span>Nmap</span>
+        <span>Scapy</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 
         {/* CONTACT */}
