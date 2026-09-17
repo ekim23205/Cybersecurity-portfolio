@@ -44,7 +44,7 @@ function App() {
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <a
-  href="/Eun-Kim-Resume.pdf"
+  href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf"
   target="_blank"
   rel="noreferrer"
 >
@@ -87,7 +87,7 @@ function App() {
       </a>
 
       <a
-        href="/Eun-Kim-Resume.pdf"
+        href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf"
         target="_blank"
         rel="noreferrer"
         className="secondary-button"
