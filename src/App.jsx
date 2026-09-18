@@ -38,6 +38,23 @@ details:
     },
   ],
 },
+
+{
+  number: "03",
+  title: "Active Directory Home Lab",
+  technologies: "Windows Server 2022 • Active Directory • DNS • VirtualBox",
+  status: "Complete",
+  description:
+    "Built a virtual Windows domain environment using Windows Server 2022 and Windows 10 to simulate how organizations centrally manage users and computers.",
+  details:
+    "Configured the lab.local domain, DNS, organizational units, user accounts, and security groups. Connected a Windows 10 client to the domain and verified centralized authentication and computer management through Active Directory.",
+  links: [
+    {
+      text: "View on GitHub →",
+      url: "https://github.com/ekim23205/active-directory-home-lab",
+    },
+  ],
+},
 ];
 
 function App() {
