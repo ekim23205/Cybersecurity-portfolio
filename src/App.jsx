@@ -1,8 +1,43 @@
 import "./App.css";
 
 const projects = [
-{
+
+  {
   number: "01",
+  title: "Wazuh SIEM & Endpoint Security Monitoring Homelab",
+  technologies: "Wazuh • Ubuntu Server • Windows 10 • VirtualBox • Wireshark",
+  status: "Complete",
+  description:
+    "Built a virtual SIEM environment using Wazuh to monitor Windows security events, investigate privileged account activity, and assess endpoint security configurations.",
+  details:
+    "Deployed Wazuh on Ubuntu Server, connected a Windows 10 agent, investigated Windows Event ID 4672, and remediated a failed CIS benchmark security check, verifying the configuration changed from Failed to Passed.",
+  links: [
+    {
+      text: "View on GitHub →",
+      url: "https://github.com/ekim23205/wazuh-siem-homelab",
+    },
+  ],
+},
+
+{
+  number: "02",
+  title: "Active Directory Home Lab",
+  technologies: "Windows Server 2022 • Active Directory • DNS • VirtualBox",
+  status: "Complete",
+  description:
+    "Built a virtual Windows domain environment using Windows Server 2022 and Windows 10 to simulate how organizations centrally manage users and computers.",
+  details:
+    "Configured the lab.local domain, DNS, organizational units, user accounts, and security groups. Connected a Windows 10 client to the domain and verified centralized authentication and computer management through Active Directory.",
+  links: [
+    {
+      text: "View on GitHub →",
+      url: "https://github.com/ekim23205/active-directory-home-lab",
+    },
+  ],
+},
+
+{
+  number: "03",
   title: "System & Network Security Monitoring Tool",
   technologies: "Python • Nmap • Scapy",
   status: "Complete",
@@ -18,8 +53,8 @@ details:
   ],
 },
 
-  {
-  number: "02",
+{
+  number: "04",
   title: "Campus Password Strength Checker",
   technologies: "JavaScript • HTML • CSS",
   status: "Live",
@@ -35,23 +70,6 @@ details:
     {
       text: "View on GitHub →",
       url: "https://github.com/ekim23205/campus-password-strength-checker",
-    },
-  ],
-},
-
-{
-  number: "03",
-  title: "Active Directory Home Lab",
-  technologies: "Windows Server 2022 • Active Directory • DNS • VirtualBox",
-  status: "Complete",
-  description:
-    "Built a virtual Windows domain environment using Windows Server 2022 and Windows 10 to simulate how organizations centrally manage users and computers.",
-  details:
-    "Configured the lab.local domain, DNS, organizational units, user accounts, and security groups. Connected a Windows 10 client to the domain and verified centralized authentication and computer management through Active Directory.",
-  links: [
-    {
-      text: "View on GitHub →",
-      url: "https://github.com/ekim23205/active-directory-home-lab",
     },
   ],
 },
@@ -76,6 +94,7 @@ function App() {
   href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf"
   target="_blank"
   rel="noreferrer"
+  className="secondary-button"
 >
   Resume
 </a>
@@ -397,38 +416,58 @@ function App() {
 
   <div className="skill-categories">
 
-    <div className="skill-category">
-      <h3>Languages</h3>
-      <div className="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>JavaScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
-      </div>
+  <div className="skill-category">
+    <h3>Programming & Development</h3>
+    <div className="skills">
+      <span>Python</span>
+      <span>Java</span>
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>React</span>
+      <span>Git</span>
+      <span>GitHub</span>
     </div>
-
-    <div className="skill-category">
-      <h3>Development</h3>
-      <div className="skills">
-        <span>React</span>
-        <span>Git</span>
-        <span>GitHub</span>
-      </div>
-    </div>
-
-    <div className="skill-category">
-      <h3>Cybersecurity & Systems</h3>
-      <div className="skills">
-        <span>Linux</span>
-        <span>Kali Linux</span>
-        <span>Nmap</span>
-        <span>Scapy</span>
-      </div>
-    </div>
-
   </div>
 
+  <div className="skill-category">
+    <h3>Cybersecurity & Monitoring</h3>
+    <div className="skills">
+      <span>Wazuh SIEM</span>
+      <span>Windows Event Logs</span>
+      <span>Endpoint Monitoring</span>
+      <span>Security Configuration Assessment</span>
+      <span>CIS Benchmarks</span>
+      <span>Network Traffic Analysis</span>
+    </div>
+  </div>
+
+  <div className="skill-category">
+    <h3>Systems & Administration</h3>
+    <div className="skills">
+      <span>Linux</span>
+      <span>Kali Linux</span>
+      <span>Windows Server</span>
+      <span>Active Directory</span>
+      <span>DNS</span>
+      <span>Group Policy</span>
+      <span>PowerShell</span>
+      <span>VirtualBox</span>
+    </div>
+  </div>
+
+  <div className="skill-category">
+    <h3>Networking & Security Tools</h3>
+    <div className="skills">
+      <span>Wireshark</span>
+      <span>Nmap</span>
+      <span>Scapy</span>
+      <span>TCP/IP</span>
+      <span>Packet Analysis</span>
+    </div>
+  </div>
+
+</div>
 </section>
 
 
