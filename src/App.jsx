@@ -91,7 +91,7 @@ function App() {
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <a
-  href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf"
+  href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf?v=2"
   target="_blank"
   rel="noreferrer"
   className="secondary-button"
