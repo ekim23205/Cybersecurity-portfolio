@@ -1,78 +1,70 @@
 import "./App.css";
 
 const projects = [
-
   {
-  number: "01",
-  title: "Wazuh SIEM & Endpoint Security Monitoring Homelab",
-  technologies: "Wazuh • Ubuntu Server • Windows 10 • VirtualBox • Wireshark",
-  status: "Complete",
-  description:
-    "Built a virtual SIEM environment using Wazuh to monitor Windows security events, investigate privileged account activity, and assess endpoint security configurations.",
-  details:
-    "Deployed Wazuh on Ubuntu Server, connected a Windows 10 agent, investigated Windows Event ID 4672, and remediated a failed CIS benchmark security check, verifying the configuration changed from Failed to Passed.",
-  links: [
-    {
-      text: "View on GitHub →",
-      url: "https://github.com/ekim23205/wazuh-siem-homelab",
-    },
-  ],
-},
-
-{
-  number: "02",
-  title: "Active Directory Home Lab",
-  technologies: "Windows Server 2022 • Active Directory • DNS • VirtualBox",
-  status: "Complete",
-  description:
-    "Built a virtual Windows domain environment using Windows Server 2022 and Windows 10 to simulate how organizations centrally manage users and computers.",
-  details:
-    "Configured the lab.local domain, DNS, organizational units, user accounts, and security groups. Connected a Windows 10 client to the domain and verified centralized authentication and computer management through Active Directory.",
-  links: [
-    {
-      text: "View on GitHub →",
-      url: "https://github.com/ekim23205/active-directory-home-lab",
-    },
-  ],
-},
-
-{
-  number: "03",
-  title: "System & Network Security Monitoring Tool",
-  technologies: "Python • Nmap • Scapy",
-  status: "Complete",
-  description:
-  "Built a Python security monitoring tool that analyzes system logs, monitors CPU and memory usage, and generates alerts when suspicious activity is detected.",
-details:
-  "Integrated Nmap service detection and Scapy packet capture to analyze local network activity and identify source and destination IP addresses.",
-  links: [
-    {
-      text: "View on GitHub →",
-      url: "https://github.com/ekim23205/system-network-security-monitor",
-    },
-  ],
-},
-
-{
-  number: "04",
-  title: "Campus Password Strength Checker",
-  technologies: "JavaScript • HTML • CSS",
-  status: "Live",
-  description:
-  "Built an interactive password strength checker that evaluates passwords based on length, character variety, and common security weaknesses.",
-details:
-  "Implemented real-time security feedback entirely in the browser so entered passwords are never transmitted to or stored on a server.",
-  links: [
-    {
-      text: "Live Demo →",
-      url: "https://ekim23205.github.io/campus-password-strength-checker/",
-    },
-    {
-      text: "View on GitHub →",
-      url: "https://github.com/ekim23205/campus-password-strength-checker",
-    },
-  ],
-},
+    number: "01",
+    title: "Wazuh SIEM & Endpoint Security Monitoring Homelab",
+    technologies: "Wazuh • Ubuntu Server • Windows 10 • VirtualBox • Wireshark",
+    status: "Complete",
+    description:
+      "Built a virtual SIEM environment using Wazuh to monitor Windows security events, investigate privileged account activity, and assess endpoint security configurations.",
+    details:
+      "Deployed Wazuh on Ubuntu Server, connected a Windows 10 agent, investigated Windows Event ID 4672, and remediated a failed CIS benchmark security check, verifying the configuration changed from Failed to Passed.",
+    links: [
+      {
+        text: "View on GitHub →",
+        url: "https://github.com/ekim23205/wazuh-siem-homelab",
+      },
+    ],
+  },
+  {
+    number: "02",
+    title: "SecureID Biometric Authentication System",
+    technologies: "Python • OpenCV • Cryptography • Streamlit",
+    status: "Complete",
+    description:
+      "Built a Python/OpenCV facial authentication prototype using LBPH facial matching, randomized movement challenges, and PIN verification.",
+    details:
+      "Secured facial data using encryption, pseudonymous user IDs, and user-controlled deletion. Implemented failed-attempt monitoring, temporary lockouts, privacy-minimized audit logging, and a Streamlit security dashboard. Passed 27 automated structural validation checks.",
+    links: [
+      {
+        text: "View on GitHub →",
+        url: "https://github.com/ekim23205/SecureID-Biometric-Authentication",
+      },
+    ],
+  },
+  {
+    number: "03",
+    title: "Active Directory Home Lab",
+    technologies: "Windows Server 2022 • Active Directory • DNS • VirtualBox",
+    status: "Complete",
+    description:
+      "Built a virtual Windows domain environment using Windows Server 2022 and Windows 10 to simulate how organizations centrally manage users and computers.",
+    details:
+      "Configured the lab.local domain, DNS, organizational units, user accounts, and security groups. Connected a Windows 10 client to the domain and verified centralized authentication and computer management through Active Directory.",
+    links: [
+      {
+        text: "View on GitHub →",
+        url: "https://github.com/ekim23205/active-directory-home-lab",
+      },
+    ],
+  },
+  {
+    number: "04",
+    title: "System & Network Security Monitoring Tool",
+    technologies: "Python • Nmap • Scapy",
+    status: "Complete",
+    description:
+      "Built a Python security monitoring tool that analyzes system logs, monitors CPU and memory usage, and generates alerts when suspicious activity is detected.",
+    details:
+      "Integrated Nmap service detection and Scapy packet capture to analyze local network activity and identify source and destination IP addresses.",
+    links: [
+      {
+        text: "View on GitHub →",
+        url: "https://github.com/ekim23205/system-network-security-monitor",
+      },
+    ],
+  },
 ];
 
 function App() {
@@ -91,7 +83,7 @@ function App() {
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <a
-  href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf?v=2"
+  href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf?v=3"
   target="_blank"
   rel="noreferrer"
   className="secondary-button"
@@ -135,7 +127,7 @@ function App() {
       </a>
 
       <a
-        href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf"
+        href="/Cybersecurity-portfolio/Eun-Kim-Resume.pdf?v=3"
         target="_blank"
         rel="noreferrer"
         className="secondary-button"
@@ -424,9 +416,11 @@ function App() {
       <span>JavaScript</span>
       <span>HTML</span>
       <span>CSS</span>
-      <span>React</span>
+      <span>React.js</span>
       <span>Git</span>
       <span>GitHub</span>
+      <span>OpenCV</span>
+      <span>Streamlit</span>
     </div>
   </div>
 
@@ -439,6 +433,9 @@ function App() {
       <span>Security Configuration Assessment</span>
       <span>CIS Benchmarks</span>
       <span>Network Traffic Analysis</span>
+      <span>Biometric Authentication</span>
+      <span>Cryptography (Fernet)</span>
+      <span>Authentication Logging</span>
     </div>
   </div>
 
